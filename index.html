@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART GATE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contain">
+        <div class="header">
+            <h1>SMART GATE V1.0</h1>
+        </div>
+
+        <div class="body">
+            <div class="title_name">
+                <h2>ID Setting</h2>
+            </div>
+            <div class="table">
+                <table class="TABLE" id="userTable">
+                    <tr>
+                        <th class="title " >ID</th>
+                        <th class="title " >NAME</th>
+                        <th class="title " >CODE</th>
+                    </tr>
+                    <tr>
+                        <td class="contain" id="id1">0000001</td>
+                        <td class="contain" id="name1">LONG SAMNANG</td>
+                        <td class="contain" id="code1">123456789</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="control">
+                <div class="box">
+                    <input type="text" id="id_box" placeholder="Enter ID, Name, Code">
+                    <p for="ID" id="id_box_label">ID</p>
+                </div>
+                <div class="button">
+                    <div class="btn_add">
+                        <button class="button" id="ADD" onclick="addUser()">ADD</button>
+                    </div>
+                    <div class="btn_delet">
+                        <button class="button" id="DELET" onclick="deleteUser()">DELETE</button>
+                    </div>
+                </div>
+                <div class="status">
+                    <p id="status">- - - - - - - - - - - -</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>POWER BY: IMPROTEK</h3>
+
+        </div>
+    </div>
+    
+
+    <script>
+        function addUser() {
+            var data = document.getElementById("id_box").value;
+            var dataArray = data.split(',');
+    
+            if (dataArray.length === 3) {
+                var table = document.getElementById("userTable");
+                var newRow = table.insertRow(-1);
+                newRow.insertCell(0).innerHTML = dataArray[0];
+                newRow.insertCell(1).innerHTML = dataArray[1];
+                newRow.insertCell(2).innerHTML = dataArray[2];
+    
+                document.getElementById("status").value = "User added successfully.";
+            } else {
+                document.getElementById("status").value = "Please enter ID, Name, and Code separated by commas.";
+            }
+        }
+    
+        function deleteUser() {
+            var idToDelete = document.getElementById("id_box").value;
+            var table = document.getElementById("userTable");
+            for (var i = 1; i < table.rows.length; i++) {
+                if (table.rows[i].cells[0].innerHTML === idToDelete) {
+                    table.deleteRow(i);
+                    document.getElementById("status").value = "User deleted successfully.";
+                    return;
+                }
+            }
+            document.getElementById("status").value = "User not found.";
+        }
+    </script>
+</body>
+</html>

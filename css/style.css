@@ -1,0 +1,276 @@
+body {
+    /* background-color: aqua; */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #ABDCFF, #0396FF, #ABDCFF);
+}
+
+/* HOLD WEBSITE */
+.contain {
+    width: 373px;
+    height: 795px;
+    /* background-color: red; */
+    margin: auto;
+    /* padding-top: 15px; */
+    margin-top: 10px;
+}
+
+
+/* HEADER */
+.contain .header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #030880;
+    border-radius: 10px;
+}
+.contain .header h1{
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+    margin-top: 12px;
+}
+
+
+/* BODY */
+.contain .body {
+    width: 100%;
+    height: 665px;
+    margin-top: 10px;
+    background-color: #030880;
+    /* display: block; */
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+}
+.contain .body .title_name {
+    width: 100%;
+    height: 70px;
+    /* background-color: deeppink; */
+    padding-top: 1px;
+}
+.contain .body .title_name h2 {
+    font-family: Arial;
+    font-size: 25px;
+    /* font-weight: bold; */
+    text-align: center;
+    color: azure;
+}
+
+/* --TABLE--  */
+.contain .body .table {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 405px;
+    background-color: deepskyblue;
+    margin: auto;
+    margin-top: 3px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    overflow: scroll;
+}
+.contain .body .table .TABLE {
+    border: 3px solid black;
+}
+.contain .body .table table, th, td {
+    height: 20px;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: azure;
+    border: 1.5px solid black;
+}
+.contain .body .table .title {
+    width: 100px;
+    height: 25px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+    /* background-color: azure; */
+    border: 2px solid black;
+}
+.contain .body .table .contain{
+    width: 100px;
+    height: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: azure;
+    border: 1.5px solid black;
+}
+
+
+
+/* --CONTROL-- */
+.contain .body .control {
+    width: 98%;
+    height: 159px;
+    /* background-color: chartreuse; */
+    margin: auto;
+    margin-top: 3px;
+}
+
+/* ---BOX ID--- */
+.contain .body .control .box {
+    width: 98%;
+    height: 50px;
+    /* background-color:blueviolet; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* padding-top: 4px; */
+    /* padding-bottom: 2px; */
+}
+.contain .body .control .box #id_box {
+    display: flex;
+    justify-content: center; 
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    height: 30px;
+    width: 250px;
+    margin-top: 7px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* ---BUTTON---  */
+.contain .body .control .box #id_box_label {
+    font-family: Arial;
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-align: center;
+    color: azure;
+    margin-top: 14px;
+    margin-left: 5px; 
+}
+.contain .body .control .button {
+    width: 98%;
+    height: 77px;
+    /* background-color: darkorange; */
+    margin: auto;
+}
+.contain .body .control .button .btn_add {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: gold; */
+    float: left;
+}
+.contain .body .control .button .btn_add #ADD {
+    width: 100px;
+    height: 40%;
+}
+.contain .body .control .button .btn_add .button {
+    margin-top: 20px;
+    /* margin: 0 10px; */
+    /* padding: 10px 30px; */
+    border: 1px solid azure;
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.1s ease-in, all 0.08s ease-in;
+    box-shadow: 0 5px 0 deepskyblue;
+}
+.contain .body .control .button .btn_add .button:hover {
+    border-color: black;
+    box-shadow: 0 5px 0 deepskyblue;
+}
+.contain .body .control .button .btn_add .button:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 azure;
+}
+
+.contain .body .control .button .btn_delet {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    float: left;
+}
+.contain .body .control .button .btn_delet #DELET {
+    width: 100px;
+    height: 40%;
+}
+.contain .body .control .button .btn_delet .button {
+    margin-top: 20px;
+    /* margin: 0 10px; */
+    /* padding: 10px 30px; */
+    border: 1px solid azure;
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.1s ease-in, all 0.08s ease-in;
+    box-shadow: 0 5px 0 deepskyblue;
+}
+.contain .body .control .button .btn_delet .button:hover {
+    border-color: black;
+    box-shadow: 0 5px 0 deepskyblue;
+}
+.contain .body .control .button .btn_delet .button:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 azure;
+}
+.contain .body .control .status {
+    display: flex;
+    justify-content: center; 
+    justify-content: center;
+    width: 98%;
+    height: 32px;
+    /* background-color: forestgreen; */
+    margin: auto;
+    /* padding-top: 2px; */
+}
+.contain .body .control .status #status{
+    display: flex;
+    justify-content: center; 
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 17px;
+    margin: auto;
+    margin-top: 5px;
+    color: azure;
+    font-family: Arial;
+    font-size: 15px;
+    /* background-color: #ABDCFF; */
+}
+
+
+
+
+/* FOOTER */
+.contain .footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #030880;
+    border-radius: 10px;
+}
+.contain .footer h3{
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+    margin-top: 12px;
+}
